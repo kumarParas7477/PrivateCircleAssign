@@ -1,0 +1,28 @@
+table{
+   margin-left: 3%;
+   align-content: flex-start;
+    width: 90%;
+   height: 100%; 
+
+}
+td{
+    width: max-content;
+}
+tr{
+   line-height: 25px;
+   min-height: 25px;
+   height: 25px;
+   
+}
+
+tr:hover{
+    background-color: whitesmoke;
+}
+
+tr:hover button{
+    background-image: linear-gradient(to bottom,white 90% ,navy 10%);
+}
+thead{
+    font-size: small;
+color: gray;
+}

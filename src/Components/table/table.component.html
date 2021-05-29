@@ -1,0 +1,21 @@
+
+<div class="table-responsive">
+<table class="table" style="overflow-y: scroll;">
+    <thead>
+        <th>Date</th>
+        <th>List Name</th>
+        <th>No Of Entities</th>
+        <th>Actions</th>
+        <th></th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of filteredData; let i = index">
+<td style="color: gray;font-size: small;" ><app-date [date]="item.date"></app-date></td>
+<td style="font-weight: bold;" [ngStyle]="{'color': item.date == null ? 'skyblue' : null}">{{item.name}}</td>
+<td>{{item.entities}}</td>
+<td><app-actionicons [date]="item.date"></app-actionicons></td>
+<td><button class="btn btn-sm" (click)="emitIndex(item)">Details</button></td>
+            </tr>
+        </tbody>
+</table>
+</div>

@@ -1,0 +1,5 @@
+<p class ="heading">No description yet <strong style="color: navy;">+Add Description</strong></p>
+
+<div   *ngIf="data != undefined && data.description !== null" >
+    <p class="text" *ngFor="let item of data.description">{{item}}</p>
+</div>

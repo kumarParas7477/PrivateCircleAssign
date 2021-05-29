@@ -1,0 +1,30 @@
+.home{
+    display: flex;
+     /* flex-direction: row; */
+     /* flex: 2 1 auto;  */
+}
+
+/* .home:first-child{
+    width: 70%
+} */
+
+.description{
+    height: 70vh;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+ 
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 5px;
+  }
+  
